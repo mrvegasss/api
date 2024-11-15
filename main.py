@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 app = Flask(__name__)
 
 # Model ve tokenizer yükleme
-model_name = "bigcode/starcoderbase"  # Çok dilli kodlama için uygun bir model
+model_name = "meta/code-llama-7b-hf"  # Çok dilli kodlama için uygun bir model
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
